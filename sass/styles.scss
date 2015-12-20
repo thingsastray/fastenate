@@ -1,5 +1,52 @@
+@import 'partials/reset';
+
+* {
+  box-sizing: border-box;
+}
+
+$primary: #3A3A3C;
+$secondary: #818285;
+	
+
 body {
-  h1 {
-    background-color: #fff;
-  }
+	background-image: url('/assets/bg.jpg');
+	// background-size: auto;
+	// background-position: center center;
+	// background-repeat: repeat;
+}
+	
+
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: lighter;
+	font-size: 50px;
+  background-color: #fff;
+  flex: 0 0 100%;
+}
+
+.block{
+	
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.button{
+	background-color: $primary;
+	color: $secondary;
+	flex: 0 0 33.3333%;
+		&.boards{
+			background-color: green;
+			border-left-style: solid;
+			border-left-color: #818285;
+			border-left-width: 50px;
+			border-right-color: #818285;
+			border-right-style: solid; 
+			border-right-width: 18px;
+			
+		}
+}
+
+.pictures{
+		
 }
