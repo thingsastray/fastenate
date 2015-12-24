@@ -6,24 +6,29 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed:300,700' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+  <script type="text/javascript" src='app.js'></script>
 </head>
 <body>
-  <div class="block block-title">
-    <h1>
-    	<img src="/assets/logo.svg" alt="Fastenate Logo"> 
-    </h1>
-  </div>
-  <div>
-	  <ul class = "block block-button">
-	  	<li class = "button button-random"><a>Random</a></li>
-			<li class = "button button-boards"><a>My Boards</a></li>
-			<li class = "button button-app" ><a>Get The App</a></li>
-	  </ul>
-  </div>
-  <div class = "block block-pictures">
-	  <ul>
-	  	
-	  </ul>
+	<div>
+	  <div class="block">
+	    <h1 class="title">
+	    	<img src="/assets/logo.svg" alt="Fastenate Logo"> 
+	    </h1>
+	  </div>
+		  <ul class="block">
+		  	<li id="random" class= "button random"><a href="#">Random</a></li>
+				<li id="myboards" class = "button boards"><a href="#">My Boards</a></li>
+				<li id="myapp" class = "button app" ><a href="#">Get The App</a></li>
+		  </ul>
+	  <div>
+		  <ul id="picture" class = "block column"></ul>
+		</div>
+		</div>
   </div>
 </body>
+<footer class="footer">
+	<p><img src="/assets/facebook_grey.svg"></p>
+	<p><img src="/assets/instagram_orange.svg">
+</footer>
 </html>
