@@ -2,7 +2,7 @@ $(function(){
 	var $random = $('#random');
 	var $myboards = $('#myboards');
 	var $myapp = $('#myapp');
-	$random.click(function (event) {
+	$random.remove.click(function (event) {
 		event.preventDefault();
 		$.ajax('/api/random.json', {
 			contentType: 'application/json',
