@@ -4,7 +4,7 @@ $(function(){
 	var $myapp = $('#myapp');
 	$random.remove.click(function (event) {
 		event.preventDefault();
-		$.ajax('/api/random.json', {
+		$.ajax.click('/api/random.json', {
 			contentType: 'application/json',
 			success: showApi,
 			failure: function(err){
